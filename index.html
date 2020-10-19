@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ! FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+	<!-- ! Weather Icon -->
+	<link rel="stylesheet" href="css/owfont-regular.min.css">
+	<!-- ! Font Awesome Icone-->
+	<script async src="https://kit.fontawesome.com/3d8e44fa38.js" crossorigin="anonymous"></script>
+	<!-- ! CSS -->
+	<link rel="stylesheet" href="css/style-min.css">
+	<title>Momentum</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__body">
+			<div class="swither">
+				Change Background
+				<i class="far fa-caret-square-right" id='swither'></i>
+			</div>
+			<div class="wearther">
+				<div class="city" contenteditable="true">Grodno</div>
+				<div class="temp">
+					<i class="weather-icon owf"></i>
+					<div class="temperature"></div>
+				</div>
+				<div class="weather-description"></div>
+			</div>
+			<div class="quotes">
+				<div class="quotes__wrapper">
+					<div class="btn__quote"><i class="fas fa-sync-alt" id='refresh-quote'></i></div>
+					<div class="mb-wrap mb-style">
+						<blockquote>
+							<p id='quote'>Loading...</p>
+						</blockquote>
+						<div class="mb-attribution">
+							<p class="mb-author" id='author'></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="momentum">
+			<div class="momentum__date" id='dateNow'></div>
+			<time id='time'></time>
+			<div class="momentum__info">
+				<span id='greeting'></span>
+				<span id='name' contenteditable="true">Vladimir</span>
+			</div>
+			<div class="momentum__focus">
+				<h2 class="momentum__plan">What is your focus for today?</h2>
+				<h3 id='focus' contenteditable="true"> Self-development</h3>
+			</div>
+		</div>
+	</div>
+	<!-- ! JS -->
+	<script src="js/script-min.js"></script>
+</body>
+
+</html>
